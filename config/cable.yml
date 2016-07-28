@@ -3,7 +3,7 @@
 
 production:
   adapter: redis
-  url: <%=ENV['REDIS_URL']%>
+  url: redis://redistogo:76aed44df23f48a5f8152bc1f14dea6a@sculpin.redistogo.com:9164/
 
 development:
   adapter: async

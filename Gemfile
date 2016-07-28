@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
@@ -26,10 +25,12 @@ gem 'redis', '~> 3.0'
 
 group :production do 
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug'
   gem 'pry'
 end
